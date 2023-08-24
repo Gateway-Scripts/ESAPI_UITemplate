@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20,10,0,0">
+            <TextBlock Margin="2">
+                <Run Text="Patient Id: " FontWeight="Bold"/>
+                <Run Text="{Binding PatientId}"/>
+            </TextBlock>
+            <TextBlock Margin="2">
+                <Run Text="Structure Set: " FontWeight="Bold"/>
+                <Run Text="{Binding StructureSetId}"/>
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>

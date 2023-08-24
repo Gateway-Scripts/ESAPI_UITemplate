@@ -57,6 +57,7 @@ namespace ESAPI_UITemplate
                         esapiWorker = new EsapiWorker(esapiApplication);
                         AutoPlanningService.EsapiWorker = esapiWorker;
                         AutoPlanningService.StructureSet = _structureSet;
+                        AutoPlanningService.Patient = _patient;
                         // This new queue of tasks will prevent the script
                         // for exiting until the new window is closed
                         DispatcherFrame frame = new DispatcherFrame();

@@ -13,6 +13,7 @@ namespace ESAPI_UITemplate.Services
         public static EsapiWorker EsapiWorker;
         public static bool SavedModifications;
         public static StructureSet StructureSet;
+        public static Patient Patient;
 
         internal static List<StructureModel> GetStructuresFromStructureSet()
         {
